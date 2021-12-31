@@ -26,7 +26,7 @@ const checkWord = async (word) => {
             if (foundWord) {
                 resolve(foundWord)
             } else {
-                resolve({error: `'${word}' is not in the dictionary`})
+                resolve({error: `'${word.toUpperCase()}' is not in the dictionary`})
             }
         } catch {
             resolve('')
